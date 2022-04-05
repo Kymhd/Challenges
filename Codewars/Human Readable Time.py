@@ -10,17 +10,15 @@ The maximum time never exceeds 359999 (99:59:59)
 """
 def make_readable(ss):
     # Do something
+    # ss => secondes hh => heures mm => minutes
     (hh, ss) = divmod(ss, 3600)
     (mm, ss) = divmod(ss, 60)
-    
-    if len(str(ss))<2:
-        ss = "0"+str(ss)
-    if len(str(mm))<2:
-        mm = "0"+str(mm)
-    if len(str(hh))<2: 
-        hh = "0"+str(hh)
-    
-    return f"{hh}:{mm}:{ss}"
+    """
+    hh = ss // 3600
+    mm = (ss - 3600*hh) // 60
+    ss = ss - 3600*hh - 60*hh
+    """
+    return f"{hh:02}:{mm:02}:{ss:02}"
       
       
 test.assert_equals(make_readable(0), "00:00:00")
