@@ -1,1 +1,1 @@
-# Projects
+J'ai nommé cette partie "challenge". Pour apprendre tous les jours et m'exercer, j'utilise des sites qui proposent des challenges dans tous les langages de programmation. L'avantage de ces sites est qu'ils permettent de comparer ma solution avec celle des autres. Cela me permet de voir différentes façons de raisonner pour résoudre un problème algorithmique donné.
